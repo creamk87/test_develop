@@ -1,2 +1,5 @@
 ### 第一次
-./python_game
+./first_python/python_game
+### 第二次
+./second_python/oo_work1.py
+./second_python/oo_work2.py
