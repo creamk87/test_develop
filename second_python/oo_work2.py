@@ -51,11 +51,20 @@ class Tonnglao:
         else:
             print("我认不到你，你奏凯！")
 
-    def fight_zms(self):
+    def fight_zms(self, enemy_hp, enemy_power):
         self.power *= 10
         self.hp /= 2
         print(f"现在攻击力是{self.power}")
         print(f"现在血量是{self.hp}")
+        while True:
+            self.hp -= enemy_power
+            enemy_hp -= self.power
+            if self.hp <= 0:
+                print("你凶！我攻击力翻倍都没干赢你")
+                break
+            elif enemy_hp <= 0:
+                print("认输吧，剑人！")
+                break
 
 
 class XuZhu(Tonnglao):
@@ -77,8 +86,8 @@ tl.see_people("丁春秋")
 print()
 tl.see_people("习大大")
 print()
-tl.fight_zms()
+tl.fight_zms(500, 200)
 xz = XuZhu(888, 50)
 xz.read()
-xz.fight_zms()
+xz.fight_zms(500, 50)
 
