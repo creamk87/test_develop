@@ -22,6 +22,9 @@ __product_name = PyCharm
 """
 import pytest
 import yaml
+import sys
+sys.path.append("..")
+print(sys.path)
 from python_scripts.third_pytest_scripts_01.Calculator.MyCalculator import Calculator
 
 
