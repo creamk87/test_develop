@@ -22,7 +22,7 @@ __product_name = PyCharm
 """
 import pytest
 import yaml
-from python_scripts.third_pytest_scrpits_01.Calculator.MyCalculator import Calculator
+from python_scripts.third_pytest_scripts_01.Calculator.MyCalculator import Calculator
 
 
 def get_data(key):
