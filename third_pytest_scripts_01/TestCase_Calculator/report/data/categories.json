@@ -1,0 +1,124 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 5 == 6",
+      "children" : [ {
+        "name" : "test_integer_add[整数加法_结果2]",
+        "uid" : "90405a29cb3ba96c",
+        "parentUid" : "0942b91707c084add9b9f653bdb18885",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597458668525,
+          "stop" : 1597458668526,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2", "4", "5" ]
+      } ],
+      "uid" : "0942b91707c084add9b9f653bdb18885"
+    }, {
+      "name" : "AssertionError: assert 101 == 100",
+      "children" : [ {
+        "name" : "test_integer_add[整数加法_结果4]",
+        "uid" : "78fa540e34d61e2b",
+        "parentUid" : "123967c2b833177214a38221e6928c43",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597458668568,
+          "stop" : 1597458668569,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "89", "11", "101" ]
+      } ],
+      "uid" : "123967c2b833177214a38221e6928c43"
+    }, {
+      "name" : "AssertionError: assert 3.5 == 3.0",
+      "children" : [ {
+        "name" : "test_integer_div[整数除法_结果4]",
+        "uid" : "7a63dd027cdbc4f7",
+        "parentUid" : "d32aea30e13701b99d0e955459174c12",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597458668595,
+          "stop" : 1597458668595,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "75", "25", "3.5" ]
+      } ],
+      "uid" : "d32aea30e13701b99d0e955459174c12"
+    }, {
+      "name" : "AssertionError: assert 3.3 == 3.3000000000000003",
+      "children" : [ {
+        "name" : "test_float_add[float_add_result1]",
+        "uid" : "28bc43f863ea06ab",
+        "parentUid" : "0c6abd93a582fa32e126d4ef01a1b5ae",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597458668602,
+          "stop" : 1597458668602,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1.1", "2.2", "3.3" ]
+      }, {
+        "name" : "test_float_div[float_div_result1]",
+        "uid" : "41022b97477acd00",
+        "parentUid" : "0c6abd93a582fa32e126d4ef01a1b5ae",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597458668624,
+          "stop" : 1597458668625,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "9.9", "3", "3.3" ]
+      } ],
+      "uid" : "0c6abd93a582fa32e126d4ef01a1b5ae"
+    }, {
+      "name" : "AssertionError: assert 9.7 == 9.6",
+      "children" : [ {
+        "name" : "test_float_add[float_add_result2]",
+        "uid" : "12a0d512cb7d58e7",
+        "parentUid" : "fdc8c8c22aab89f4b23664d705bcb06b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597458668611,
+          "stop" : 1597458668611,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5.5", "4.1", "9.7" ]
+      } ],
+      "uid" : "fdc8c8c22aab89f4b23664d705bcb06b"
+    }, {
+      "name" : "AssertionError: assert 0.3 == 0.2",
+      "children" : [ {
+        "name" : "test_float_add[float_add_result3]",
+        "uid" : "b37858a173025b64",
+        "parentUid" : "102d8501d1b8c41014c0231e85fd131a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597458668618,
+          "stop" : 1597458668618,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0.1", "0.1", "0.3" ]
+      } ],
+      "uid" : "102d8501d1b8c41014c0231e85fd131a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

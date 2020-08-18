@@ -1,0 +1,113 @@
+{
+  "uid" : "1f30f0c033611b79",
+  "name" : "test_integer_div[整数除法_结果4]",
+  "fullName" : "TestCal.TestCalculator#test_integer_div",
+  "historyId" : "0c3216994374382b41d1271446fc8047",
+  "time" : {
+    "start" : 1597492023637,
+    "stop" : 1597492023637,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 3.5 == 3.0",
+  "statusTrace" : "self = <python_scripts.third_pytest_scripts_01.TestCase_Calculator.TestCal.TestCalculator object at 0x7fdf989f95d0>, a = 75, b = 25\nexpect = 3.5\n\n    @allure.story(\"整数除法\")\n    @pytest.mark.parametrize(\n        ['a', 'b', 'expect'],\n        [data for data in get_data('integer_div')],\n        ids=[\n            '整数除法_结果1',\n            '整数除法_结果2',\n            '整数除法_结果3',\n            '整数除法_结果4'\n        ])\n    def test_integer_div(self, a, b, expect):\n        result = self.cal.div(a, b)\n>       assert expect == result\nE       assert 3.5 == 3.0\n\nTestCal.py:81: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1597492023557,
+      "stop" : 1597492023558,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1597492023725,
+      "stop" : 1597492023725,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "计算器"
+  }, {
+    "name" : "story",
+    "value" : "整数除法"
+  }, {
+    "name" : "suite",
+    "value" : "TestCal"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalculator"
+  }, {
+    "name" : "host",
+    "value" : "CreamK"
+  }, {
+    "name" : "thread",
+    "value" : "81900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "75"
+  }, {
+    "name" : "b",
+    "value" : "25"
+  }, {
+    "name" : "expect",
+    "value" : "3.5"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "421a3ef1a51ee449",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 3.5 == 3.0",
+      "time" : {
+        "start" : 1597491686428,
+        "stop" : 1597491686428,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1f30f0c033611b79.json",
+  "parameterValues" : [ "75", "25", "3.5" ]
+}

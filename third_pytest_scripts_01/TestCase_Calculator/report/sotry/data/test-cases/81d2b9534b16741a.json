@@ -1,0 +1,163 @@
+{
+  "uid" : "81d2b9534b16741a",
+  "name" : "test_integer_add[整数加法_结果2]",
+  "fullName" : "TestCal.TestCalculator#test_integer_add",
+  "historyId" : "6ad1aba5f0af1b618c3a6dee7afe2429",
+  "time" : {
+    "start" : 1597492023564,
+    "stop" : 1597492023565,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 5 == 6",
+  "statusTrace" : "self = <python_scripts.third_pytest_scripts_01.TestCase_Calculator.TestCal.TestCalculator object at 0x7fdf9899de90>, a = 2, b = 4, expect = 5\n\n    @allure.story(\"整数加法\")\n    @pytest.mark.parametrize(\n        ['a', 'b', 'expect'],\n        [data for data in get_data('integer_add')],\n        ids=[\n            '整数加法_结果1',\n            '整数加法_结果2',\n            '整数加法_结果3',\n            '整数加法_结果4'\n        ])\n    def test_integer_add(self, a, b, expect):\n        with allure.step(\"得到计算结果\"):\n            print(\"得到计算结果\")\n            result = self.cal.add(a, b)\n        with allure.step(\"断言结果\"):\n            print(\"断言判断\")\n>           assert expect == result\nE           assert 5 == 6\n\nTestCal.py:67: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1597492023557,
+      "stop" : 1597492023558,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 5 == 6",
+    "statusTrace" : "self = <python_scripts.third_pytest_scripts_01.TestCase_Calculator.TestCal.TestCalculator object at 0x7fdf9899de90>, a = 2, b = 4, expect = 5\n\n    @allure.story(\"整数加法\")\n    @pytest.mark.parametrize(\n        ['a', 'b', 'expect'],\n        [data for data in get_data('integer_add')],\n        ids=[\n            '整数加法_结果1',\n            '整数加法_结果2',\n            '整数加法_结果3',\n            '整数加法_结果4'\n        ])\n    def test_integer_add(self, a, b, expect):\n        with allure.step(\"得到计算结果\"):\n            print(\"得到计算结果\")\n            result = self.cal.add(a, b)\n        with allure.step(\"断言结果\"):\n            print(\"断言判断\")\n>           assert expect == result\nE           assert 5 == 6\n\nTestCal.py:67: AssertionError",
+    "steps" : [ {
+      "name" : "得到计算结果",
+      "time" : {
+        "start" : 1597492023564,
+        "stop" : 1597492023564,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "断言结果",
+      "time" : {
+        "start" : 1597492023564,
+        "stop" : 1597492023565,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 5 == 6\n",
+      "statusTrace" : "  File \"/Users/CreamK/StudyFIle/Test_Develop/python_scripts/third_pytest_scripts_01/TestCase_Calculator/TestCal.py\", line 67, in test_integer_add\n    assert expect == result\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "694940bff890d4a5",
+      "name" : "stdout",
+      "source" : "694940bff890d4a5.txt",
+      "type" : "text/plain",
+      "size" : 32
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1597492023725,
+      "stop" : 1597492023725,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "整数加法"
+  }, {
+    "name" : "feature",
+    "value" : "计算器"
+  }, {
+    "name" : "suite",
+    "value" : "TestCal"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalculator"
+  }, {
+    "name" : "host",
+    "value" : "CreamK"
+  }, {
+    "name" : "thread",
+    "value" : "81900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "2"
+  }, {
+    "name" : "b",
+    "value" : "4"
+  }, {
+    "name" : "expect",
+    "value" : "5"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "df089cfde0be9c30",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 5 == 6",
+      "time" : {
+        "start" : 1597491686364,
+        "stop" : 1597491686364,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "81d2b9534b16741a.json",
+  "parameterValues" : [ "2", "4", "5" ]
+}

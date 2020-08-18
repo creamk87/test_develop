@@ -20,23 +20,24 @@ __product_name = PyCharm
                   ┃┫┫  ┃┫┫
                   ┗┻┛  ┗┻┛
 """
+import allure
 import pytest
 import yaml
 import sys
-sys.path.append("..")
-print(sys.path)
+
+# sys.path.append("..")
+# print(sys.path)
 from python_scripts.third_pytest_scripts_01.Calculator.MyCalculator import Calculator
 
 
 def get_data(key):
-    with open('../datas.yml') as f:
+    with open("../datas.yml") as f:
         data = yaml.safe_load(f)
-        # for data in data[key]:
-        #     return tuple(data)
         for data in data[key]:
             yield tuple(data)
 
 
+@allure.feature("计算器")
 class TestCalculator:
     def setup_class(self):
         self.cal = Calculator()
@@ -45,6 +46,7 @@ class TestCalculator:
     def teardown_class(self):
         print("结束计算")
 
+    @allure.story("整数加法")
     @pytest.mark.parametrize(
         ['a', 'b', 'expect'],
         [data for data in get_data('integer_add')],
@@ -55,9 +57,14 @@ class TestCalculator:
             '整数加法_结果4'
         ])
     def test_integer_add(self, a, b, expect):
-        result = self.cal.add(a, b)
-        assert expect == result
+        with allure.step("得到计算结果"):
+            print("得到计算结果")
+            result = self.cal.add(a, b)
+        with allure.step("断言结果"):
+            print("断言判断")
+            assert expect == result
 
+    @allure.story("整数除法")
     @pytest.mark.parametrize(
         ['a', 'b', 'expect'],
         [data for data in get_data('integer_div')],
@@ -71,6 +78,7 @@ class TestCalculator:
         result = self.cal.div(a, b)
         assert expect == result
 
+    @allure.story("小数加法")
     @pytest.mark.parametrize(
         ['a', 'b', 'expect'],
         [data for data in get_data('float_add')],
@@ -83,6 +91,8 @@ class TestCalculator:
         result = self.cal.add(a, b)
         assert expect == result
 
+    @allure.story("小数除法")
+    @allure.link("https://www.baidu.com", name="百度")
     @pytest.mark.parametrize(
         ['a', 'b', 'expect'],
         [data for data in get_data('float_div')],
