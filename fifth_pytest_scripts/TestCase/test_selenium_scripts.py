@@ -33,11 +33,9 @@ class TestSelenium:
         option = Options()
         option.debugger_address = 'localhost:9222'
         self.driver = webdriver.Chrome(options=option)
-        # self.driver = webdriver.Chrome()
-        # self.url = "https://work.weixin.qq.com/wework_admin/loginpage_wx?from=myhome_baidu"
         self.url = "https://work.weixin.qq.com/wework_admin/frame#index"
         self.driver.implicitly_wait(5)
-        # self.driver.maximize_window()
+        self.driver.maximize_window()
 
     def teardown_class(self):
         self.driver.quit()
@@ -56,6 +54,19 @@ class TestSelenium:
         self.driver.get(self.url)
         self.save_cookies()
         assert "退出" == self.driver.find_element(By.ID, "logout").text
+
+    def test_cookie1(self):
+
+        # Shelve 小型的数据库， 对象持久化保存方法，
+        db = shelve.open("mydb/login_cookies.db")
+        cookies = db['cookies']
+        db.close()
+        self.driver.get("https://work.weixin.qq.com/wework_admin/frame#index")
+
+        for cookie in cookies:
+            if 'expiry' in cookie.keys():
+                cookie.pop('expiry')
+            self.driver.add_cookie(cookie)
 
     def test_add_content(self):
         self.driver.find_element(By.XPATH, '//a[@class="index_service_cnt_itemWrap"][2]').click()
