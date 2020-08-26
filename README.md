@@ -9,3 +9,7 @@
 ./forth_pytest_scripts/TestCase
 ### 第五次 pytest_scripts
 ./fifth_pytest_scripts/TestCase
+### 第六次 pytest_scripts
+./sixth_pytest_scripts/SelfPageObjectCase
+### 第七次 pytest_scripts
+./seventh_appium_scripts/TestCase/Test_case_appium.py
